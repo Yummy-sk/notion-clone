@@ -20,7 +20,7 @@ export function DocumentList({
 			state.includes(String(id)) && 'open'
 		}>
                 <summary class="toggle" data-index="${id}">
-                <img class="doc-img" src=${document} alt="doc-img"/>
+                <img class="doc-img" src="${document}" alt="doc-img"/>
                 <span>${title ? title : '제목 없음'}</span>
                 <span class="option-container">
                     <input type="button" class="option-btn remove" />

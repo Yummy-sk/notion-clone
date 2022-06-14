@@ -63,7 +63,7 @@ export function Editor({
 			.map(({ id, title }) => {
 				return `
             <button class="sub-document-item" data-index="${id}">
-                <img class="doc-img" src=${document} alt="doc-img"/>
+                <img class="doc-img" src="${document}" alt="doc-img"/>
                 ${title ? title : '제목없음'}
             </button>`;
 			})

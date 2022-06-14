@@ -1101,14 +1101,14 @@ var _greetingPng = require("../../public/images/greeting.png");
 var _greetingPngDefault = parcelHelpers.interopDefault(_greetingPng);
 function DocumentRoot({ $target  }) {
     const generateHTML = ()=>{
-        return `<img class="greeting-img" src=${0, _greetingPngDefault.default} alt="greeting-img"/>`;
+        return `<img class="greeting-img" src="${0, _greetingPngDefault.default}" alt="greeting-img"/>`;
     };
     this.render = ()=>{
         $target.innerHTML = generateHTML();
     };
 }
 
-},{"../../public/images/greeting.png":"8X6kE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8X6kE":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../public/images/greeting.png":"8X6kE"}],"8X6kE":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("5cfN0") + "greeting.ef77ee3f.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"iwiF7":[function(require,module,exports) {
