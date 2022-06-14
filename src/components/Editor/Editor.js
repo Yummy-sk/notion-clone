@@ -1,4 +1,3 @@
-import document from '../../public/images/document.png';
 import { $ } from '../../util/index.js';
 import { push } from '../../router.js';
 
@@ -63,7 +62,7 @@ export function Editor({
 			.map(({ id, title }) => {
 				return `
             <button class="sub-document-item" data-index="${id}">
-                <img class="doc-img" src="${document}" alt="doc-img"/>
+                <img class="doc-img" src="../../public/images/document.png" alt="doc-img"/>
                 ${title ? title : '제목없음'}
             </button>`;
 			})

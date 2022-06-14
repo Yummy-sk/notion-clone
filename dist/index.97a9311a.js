@@ -681,8 +681,6 @@ var _notFoundJs = require("./NotFound/NotFound.js");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "DocumentList", ()=>DocumentList);
-var _documentPng = require("../../public/images/document.png");
-var _documentPngDefault = parcelHelpers.interopDefault(_documentPng);
 var _indexJs = require("../../util/index.js");
 var _routerJs = require("../../router.js");
 function DocumentList({ $target , onClickDocument , onAddDocument , onDeleteDocument  }) {
@@ -700,7 +698,7 @@ function DocumentList({ $target , onClickDocument , onAddDocument , onDeleteDocu
         return `
             <details id="detail-${id1}" style="margin-left:${margin}px" ${state.includes(String(id1)) && "open"}>
                 <summary class="toggle" data-index="${id1}">
-                <img class="doc-img" src=${0, _documentPngDefault.default} alt="doc-img"/>
+                <img class="doc-img" src="../../public/images/document.png" alt="doc-img"/>
                 <span>${title1 ? title1 : "\uC81C\uBAA9 \uC5C6\uC74C"}</span>
                 <span class="option-container">
                     <input type="button" class="option-btn remove" />
@@ -798,44 +796,7 @@ function DocumentList({ $target , onClickDocument , onAddDocument , onDeleteDocu
     registerEvents();
 }
 
-},{"../../public/images/document.png":"fsw8y","../../util/index.js":"6gmsK","../../router.js":"l7a58","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fsw8y":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("5cfN0") + "document.7f0671a6.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"6gmsK":[function(require,module,exports) {
+},{"../../util/index.js":"6gmsK","../../router.js":"l7a58","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6gmsK":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "$", ()=>(0, _querySelectorJs.$));
@@ -1013,8 +974,6 @@ function DocumentEdit({ $target , onEditDocument  }) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Editor", ()=>Editor);
-var _documentPng = require("../../public/images/document.png");
-var _documentPngDefault = parcelHelpers.interopDefault(_documentPng);
 var _indexJs = require("../../util/index.js");
 var _routerJs = require("../../router.js");
 function Editor({ $target , compareStateWithStoredState , storeAtStorageWhileInput , onEditDocument  }) {
@@ -1079,7 +1038,7 @@ function Editor({ $target , compareStateWithStoredState , storeAtStorageWhileInp
         $subDocument.innerHTML = documents.map(({ id , title  })=>{
             return `
             <button class="sub-document-item" data-index="${id}">
-                <img class="doc-img" src=${0, _documentPngDefault.default} alt="doc-img"/>
+                <img class="doc-img" src="../../public/images/document.png" alt="doc-img"/>
                 ${title ? title : "\uC81C\uBAA9\uC5C6\uC74C"}
             </button>`;
         }).join("");
@@ -1093,25 +1052,20 @@ function Editor({ $target , compareStateWithStoredState , storeAtStorageWhileInp
     registerInputEvent();
 }
 
-},{"../../public/images/document.png":"fsw8y","../../util/index.js":"6gmsK","../../router.js":"l7a58","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dhYlM":[function(require,module,exports) {
+},{"../../util/index.js":"6gmsK","../../router.js":"l7a58","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dhYlM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "DocumentRoot", ()=>DocumentRoot);
-var _greetingPng = require("../../public/images/greeting.png");
-var _greetingPngDefault = parcelHelpers.interopDefault(_greetingPng);
 function DocumentRoot({ $target  }) {
     const generateHTML = ()=>{
-        return `<img class="greeting-img" src="${0, _greetingPngDefault.default}" alt="greeting-img"/>`;
+        return `<img class="greeting-img" src="../../public/images/greeting.png" alt="greeting-img"/>`;
     };
     this.render = ()=>{
         $target.innerHTML = generateHTML();
     };
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../public/images/greeting.png":"8X6kE"}],"8X6kE":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("5cfN0") + "greeting.ef77ee3f.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"iwiF7":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iwiF7":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "DocumentAdd", ()=>DocumentAdd);
