@@ -1,5 +1,5 @@
 {
-	"homepage": "https://github.com/Yummy-sk/notion-clone",
+	"homepage": "https://Yummy-sk.github.io/notion-clone",
 	"scripts": {
 		"start": "parcel index.html",
 		"build": "parcel build index.html && gh-pages -d dist"
