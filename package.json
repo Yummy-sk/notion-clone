@@ -2,7 +2,7 @@
 	"homepage": "https://yummy-sk.github.io/notion-clone",
 	"scripts": {
 		"start": "parcel index.html",
-		"build": "parcel build index.html && gh-pages -d dist"
+		"build": "parcel build index.html"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.5",
