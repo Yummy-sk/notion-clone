@@ -1,5 +1,6 @@
 import { createDOMElement } from '../../util/index.js';
 import { push } from '../../router.js';
+import img from '../../public/images/document.png';
 
 export function DocumentList({
 	$target,
@@ -19,7 +20,7 @@ export function DocumentList({
 			state.includes(String(id)) && 'open'
 		}>
                 <summary class="toggle" data-index="${id}">
-                <img class="doc-img" src="../../public/images/document.png" alt="doc-img"/>
+                <img class="doc-img" src="${img}" alt="doc-img"/>
                 <span>${title ? title : '제목 없음'}</span>
                 <span class="option-container">
                     <input type="button" class="option-btn remove" />

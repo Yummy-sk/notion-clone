@@ -1,5 +1,4 @@
 {
-	"homepage": "https://yummy-sk.github.io/notion-clone",
 	"scripts": {
 		"start": "parcel index.html",
 		"build": "parcel build index.html"
